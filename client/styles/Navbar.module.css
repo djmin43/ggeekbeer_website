@@ -1,0 +1,21 @@
+.navbar {
+    border-bottom: solid black 1px;
+    background-color: white;
+    height: 8vh;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    align-items: end;
+    position: sticky;
+    top: 0
+
+
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #053761;
+
+
+}
