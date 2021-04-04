@@ -1,5 +1,9 @@
 .background {
-    color: #053761;
-    height: 150vh;
-    
+    color: #000000;
+
+    /* background: url('../public/brewery.jpg') no-repeat center center ; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

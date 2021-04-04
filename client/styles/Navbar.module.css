@@ -1,11 +1,10 @@
 .navbar {
     border-bottom: solid black 1px;
-    background-color: white;
+    background-color: #000000;
     height: 8vh;
     display: flex;
-    padding-top: 10px;
-    justify-content: space-around;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: sticky;
     top: 0
 
@@ -15,7 +14,10 @@
 .navbar a{
     font-size: 1.2rem;
     text-decoration: none;
-    color: #053761;
+    color: #fff;
+    padding-right: 1.7rem;
+    padding-bottom: 0.3rem;
+
 
 
 }
