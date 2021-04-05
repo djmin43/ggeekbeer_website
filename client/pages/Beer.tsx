@@ -1,21 +1,21 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
+import styles from '../styles/Beer.module.css'
 
 
 
 const Beer = () => {
     return (
-        <div id="beer">
+        <div className={styles.beer} id="beer">
         {/* Regular Line */}
-        <Box m={10}>
-        <Typography  variant="h2" gutterBottom>Regular Line</Typography>
+
+        <div className={styles.box}>
+        <Typography variant="h2" gutterBottom>Regulars</Typography>
             <Grid container spacing={5}>
                 <Grid  item xs={12} sm={6} md={4} >
                     <Card elevation={3}>
@@ -56,11 +56,11 @@ const Beer = () => {
    
 
             </Grid>
-            </Box>
+            </div>
 
-            <Box m={10}>
+            <div className={styles.box}>
             {/* Seasonals */}
-            <Typography variant="h2" gutterBottom>Seasonal Line</Typography>
+            <Typography variant="h2" gutterBottom>Seasonals</Typography>
             <Grid container spacing={5}>
                 <Grid  item xs={12} sm={6} md={4} >
                     <Card elevation={3}>
@@ -87,7 +87,7 @@ const Beer = () => {
                     </Card>
                 </Grid>
             </Grid>
-        </Box>
+        </div>
         </div>
     )
 }

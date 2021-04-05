@@ -1,10 +1,9 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
-import About from '../comps/About'
-import Beer from '../comps/Beer'
-import Press from '../comps/Press'
-import ContactUs from '../comps/ContactUs'
-
+import ContactUs from './ContactUs'
+import Press from './Press'
+import Beer from './Beer'
+import About from './About'
 
 export default function Home() {
   return (

@@ -9,11 +9,9 @@ const theme = {
   
 const About = () => {
     return (
-            <div className={styles.background} id="about">
-            <Box m={10}>            
+            <div className={styles.about} id="about">
                 <Typography variant="h1" gutterBottom>About Ggeek Beer</Typography>
                 <Typography variant="body1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem repellat debitis sapiente eius tempore, esse nec</Typography>
-            </Box>
             </div>
 
 

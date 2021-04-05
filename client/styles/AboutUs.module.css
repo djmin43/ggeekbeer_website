@@ -1,4 +1,4 @@
-.background {
+.about {
     color: #000000;
 
     /* background: url('../public/brewery.jpg') no-repeat center center ; */
@@ -6,4 +6,5 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin: 5rem;
 }

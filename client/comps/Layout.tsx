@@ -22,7 +22,7 @@ const theme = createMuiTheme({
         fontWeight: 500,
       },
     },
-})
+});
 
 const Layout = ({children}: any) => {
     return (
@@ -32,6 +32,6 @@ const Layout = ({children}: any) => {
             <Footer />
         </ThemeProvider>
     )
-}
+};
 
 export default Layout
