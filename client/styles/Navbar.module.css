@@ -1,7 +1,7 @@
 .navbar {
-    border-bottom: solid black 1px;
     background-color: #000000;
     height: 8vh;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -12,12 +12,11 @@
 }
 
 .navbar a{
-    font-size: 1.2rem;
+    font-size: calc(8px + 1vw);
     text-decoration: none;
     color: #fff;
-    padding-right: 1.7rem;
-    padding-bottom: 0.3rem;
-
-
+    padding-right: 1.7vw;
+    padding-bottom: 0.5vw;
 
 }
+

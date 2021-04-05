@@ -10,15 +10,14 @@ const ContactUs = () => {
     return (
         <div className={styles.contact} id="contactus">
             <Card className={styles.card} elevation={4}>
-            <Typography variant="h2" gutterBottom align="center">Contact Us
+            <h2>Contact Us</h2>
             <form>
                 <TextField label="이름/회사이름" variant="outlined" margin="dense" color="primary" fullWidth />
                 <TextField label="이메일" variant="outlined" margin="dense" color="primary" fullWidth />
                 <TextField label="전화번호" variant="outlined" margin="dense" color="primary" fullWidth />
                 <TextField label="문의내용" variant="outlined" margin="dense" color="primary" fullWidth multiline={true} rows="10"  />
-                <Button variant="outlined" color="primary">보내기</Button>
+                <Button type="submit" variant="outlined" color="primary">보내기</Button>
             </form>
-            </Typography> 
             </Card>
         </div>
     )

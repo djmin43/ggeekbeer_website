@@ -6,5 +6,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 5rem;
+    margin: 5vw;
+}
+
+.about h1{
+    font-size: calc(32px + 1vw);
+    margin-bottom: 2.5vw;
+
+}
+
+.about p{
+    font-size: calc(8px + 1vw);
 }

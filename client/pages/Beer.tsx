@@ -13,9 +13,9 @@ const Beer = () => {
     return (
         <div className={styles.beer} id="beer">
         {/* Regular Line */}
-
+        <h1>Our Beers</h1>
         <div className={styles.box}>
-        <Typography variant="h2" gutterBottom>Regulars</Typography>
+        <h2 >Regulars</h2>
             <Grid container spacing={5}>
                 <Grid  item xs={12} sm={6} md={4} >
                     <Card elevation={3}>
@@ -60,7 +60,7 @@ const Beer = () => {
 
             <div className={styles.box}>
             {/* Seasonals */}
-            <Typography variant="h2" gutterBottom>Seasonals</Typography>
+            <h2>Seasonals</h2>
             <Grid container spacing={5}>
                 <Grid  item xs={12} sm={6} md={4} >
                     <Card elevation={3}>
