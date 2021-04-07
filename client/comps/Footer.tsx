@@ -7,9 +7,14 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 const Footer = () => {
     return (
         <div className={classes.footer} id="#footer">
-            <p>copyright &copy;2021</p>
-            <InstagramIcon />
-            <FacebookIcon />
+            <h2>copyright &copy;2021 Ggeek Beer Company</h2>
+            <div>
+            <InstagramIcon onClick={() => window.open('https://www.instagram.com/ggeek_beer/')}
+            fontSize="large" />
+            <FacebookIcon onClick={() => window.open('https://www.facebook.com/ggekbeer/')}
+            fontSize="large"/>
+            </div>
+            
         </div>
     )
 }

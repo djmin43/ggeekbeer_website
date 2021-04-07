@@ -1,9 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 const nodemailer = require('nodemailer');
 require('dotenv').config();
-const PASSWORD = process.env.password
+const PASSWORD = process.env.PASSWORD
 
-console.log(PASSWORD)
 
 
 
@@ -20,7 +19,6 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
 
   const mailList = [
     'dj.min43@gmail.com',
-    'umyoung89@gmail.com'
   ]
 
   const mailData = {
@@ -28,9 +26,12 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
     to: mailList,
     subject: `Message From ${req.body.name}`,
     text: req.body.contents,
-    html: `<div>${req.body.contents}
-          ${req.body.phoneNumber}
-          ${req.body.email}
+    html: `<div>
+          <p>이름: ${req.body.name}</p><br>
+          <p>email: ${req.body.email}</p><br>
+          <p>phone number: ${req.body.phoneNumber}</p><br>
+          <p>message: ${req.body.contents}<p>
+
           </div>`
   };
 
