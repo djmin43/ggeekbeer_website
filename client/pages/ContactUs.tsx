@@ -30,10 +30,12 @@ const ContactUs = () => {
                     'Content-Type':'application/json'
                 },
                 body: JSON.stringify(message)
-            })
-            console.log('message sent!')
+            });
+            const res = await fetch('/api/contact');
+            const data = await res.json();
+            console.log(data)
         } catch(err) {
-            console.log('error')
+            console.log('error');
         }
 
     }

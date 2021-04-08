@@ -1,20 +1,29 @@
 .about {
     color: #000000;
 
-    /* background: url('../public/brewery.jpg') no-repeat center center ; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/brewery.jpg') no-repeat center center ;
+    height: 90vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    margin: 5vw;
+    margin-bottom: 2.5vw;
+    padding: 5vw;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+
+
 }
+
 
 .about h1{
     font-size: calc(32px + 1vw);
-    margin-bottom: 2.5vw;
-
+    font-weight: 500;
+    margin-bottom: 1vw
 }
 
 .about p{
     font-size: calc(8px + 1vw);
 }
+

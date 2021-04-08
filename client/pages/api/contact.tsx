@@ -3,9 +3,6 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 const PASSWORD = process.env.PASSWORD
 
-
-
-
 export default  async (req: NextApiRequest, res: NextApiResponse) => {
   const transporter = await nodemailer.createTransport({
     port: 465,
@@ -38,12 +35,13 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
   await transporter.sendMail(mailData, function(err:any, info:any) {
     if (err){
       console.log(err)
+      res.status(400).json({message: 'message error: please contact 010-7199-4154 for questions'})
     } else {
       console.log(info)
+      res.status(200).json({message: 'message has been successfully sent'})
     }
   });
 
-  await res.status(200)
-  await res.json('message sent')
+  
   
 };
