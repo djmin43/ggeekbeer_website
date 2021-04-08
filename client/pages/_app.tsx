@@ -1,34 +1,33 @@
 import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import Layout from '../comps/Layout'
-import { useState }from 'react'
-import Button from '@material-ui/core/Button'
 import Head from 'next/head'
-import styles from '../styles/App.module.css'
+import Cookies from 'js-cookie'
+import Front from '../comps/Front'
+import { useState, useEffect } from 'react'
 
 
 
 function MyApp({ Component, pageProps }: AppProps) {
-  
-  // Softly making sure if the user is over legal drinking age
-  const [legal, setLegal] = useState<boolean>(false)
+
+  const [legalPage, setLegalPage] = useState<boolean>(false)
+
+  useEffect(() => {
+    if(Cookies.get('age') !== 'yes'){
+      setLegalPage(true)
+    } 
+  }, [])
 
   return (
     <>
     <Head>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    {legal === true ? <Layout>
+      {legalPage === false ? 
+      <Layout>
       <Component {...pageProps} />
-    </Layout> : 
-      <div className={styles.legal}>
-        <h1>Ggeek Beer Company</h1>
-        <h2>만 19세 이상 음주 가능한 연령입니까?</h2>
-        <div>
-          <button className={styles.yes} onClick={() => setLegal(true)}>예</button>
-          <button className={styles.no} onClick={() => setLegal(false)}>아니오</button>
-        </div>
-      </div>}
+      </Layout>
+      : <Front />}
     </>
   )
 }

@@ -1,7 +1,7 @@
 .about {
     color: #000000;
 
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/brewery.jpg') no-repeat center center ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/beer.jpg') no-repeat center center ;
     height: 90vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
