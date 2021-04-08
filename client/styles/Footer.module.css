@@ -1,12 +1,19 @@
 .footer{
-    background-color: #000000;
+    background-color:#1856AD;
+    padding: 1vw;
     height: 20vh;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer h2{
     font-size: calc(8px+1vw);
     font-weight: 300;
+}
+
+.footer p{
+    font-size: calc(4px+1vw);
 }

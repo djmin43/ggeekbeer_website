@@ -11,4 +11,5 @@
 
 .press p{
     font-size: calc(12px + 1vw);
+    font-weight: 300;
 }

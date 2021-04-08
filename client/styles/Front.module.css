@@ -14,15 +14,7 @@
     
   }
 
-.front div button {
-    font-size: 16px;
-    width: 150px;
-    height: 40px;
-    margin: 1vw;
-    border-radius: 12px;
-    transition: all ease-in-out;
-    background-color: #ffffff;
-  }
+
   
   .front h1 {
     font-size: calc(64px + 1vw);
@@ -35,6 +27,17 @@
   }
   
   /* Buttons */
+
+  .front div button {
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    margin: 1vw;
+    border-radius: 12px;
+    transition: all ease-in-out;
+    background-color: #ffffff;
+  }
+  
   .front div button:hover {
     transform: scale(1.05); 
   

@@ -2,16 +2,34 @@
     margin: 5vw;
 }
 
+.contact h1{
+    font-size: calc(54px + 1vw);
+    text-align: center;
+    margin: 3vw
+}
+
+.contact small{
+    color: #1856AD;
+}
+
 .card {
-    padding: 2.5vw;
+    padding: 5vw 2.5vw;
 }
 
 .card h2{
-    font-size: calc(24px + 1vw);
-    margin-bottom: 1.25vw;
+    font-size: calc(12px + 1vw);
+    margin-bottom: 2.5vw;
+    text-align: center;
 }
 
-.card p{
-    font-size: calc(12px + 1vw);
-    margin-bottom: 1.25vw;
+.card form input{
+    margin-bottom: 0.75vw;
+    outline: none;
+    width: 100%;
+}
+
+.card form textarea {
+    margin-bottom: 0.75vw;
+    outline: none;
+    width: 100%
 }

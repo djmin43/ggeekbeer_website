@@ -1,7 +1,5 @@
-import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import ContactUs from './ContactUs'
-import Press from './Press'
 import Beer from './Beer'
 import About from './About'
 
@@ -17,7 +15,6 @@ export default function Home() {
     <div>
       <About />
       <Beer />
-      <Press />
       <ContactUs />
     </div>
     </>

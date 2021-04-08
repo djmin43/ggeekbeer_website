@@ -35,13 +35,13 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
   await transporter.sendMail(mailData, function(err:any, info:any) {
     if (err){
       console.log(err)
-      res.status(400).json({message: 'message error: please contact 010-7199-4154 for questions'})
+      res.status(400).json({message: '통신에러: 010-7199-4154로 문의 부탁드립니다.'})
     } else {
       console.log(info)
-      res.status(200).json({message: 'message has been successfully sent'})
+      res.status(200).json({message: '고맙습니다. 담당자가 확인 후 연락드리겠습니다.'})
     }
   });
 
-  
+  res.status(200);
   
 };
