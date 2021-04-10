@@ -1,18 +1,15 @@
 .footer{
     background-color:#1856AD;
-    padding: 5vw;
+    padding: 2.5vw 5vw;
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+
 }
 
-.footer h2{
-    font-size: calc(8px+1vw);
-    font-weight: 300;
-}
-
-.footer p{
-    font-size: calc(4px+1vw);
+.footer p {
+    margin: 0.5vw 0;
 }

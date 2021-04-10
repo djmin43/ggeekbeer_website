@@ -14,14 +14,3 @@
 }
 
 
-.about h1{
-    font-size: calc(32px + 1vw);
-    font-weight: 500;
-    margin-bottom: 1vw;
-}
-
-.about p{
-    font-size: calc(8px + 1vw);
-    font-weight: 300;
-}
-

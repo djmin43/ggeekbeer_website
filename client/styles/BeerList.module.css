@@ -11,14 +11,12 @@
 
 /* Our Beers */
 .beer h1{
-    font-size: calc(54px + 1vw);
     text-align: center;
     margin: 3vw
 }
 
 /* Year-round / Seasonals */
 .beer h2{
-    font-size: calc(24px + 1vw);
     text-align: center;
 }
 
@@ -32,14 +30,11 @@
 }
 
 .card h3 {
-    font-size: calc(5px + 1vw);
-    font-weight: 500;
     margin: 2vw 0;
 }
 
 .card p {
     text-align: center;
-    font-size: calc(5px + 1vw);
     margin-bottom: 1.5vw;
     color: #4D5275;
 }

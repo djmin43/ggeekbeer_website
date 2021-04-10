@@ -10,3 +10,31 @@
 
 
 
+h1 {
+  font-size: calc(48px + 1vw);
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+h2 {
+  font-size: calc(24px + 1vw);
+  font-weight: 500;
+}
+
+h3 {
+  font-size: calc(16px + 1vw);
+  font-weight: 400;
+}
+
+h4{
+  font-size: calc(12px + 1vw);
+  font-weight: 400;
+}
+
+p{
+  font-size: calc(8px + 1vw);
+}
+
+span{
+  font-size: calc(6px + 1vw)
+}

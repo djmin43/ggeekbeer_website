@@ -13,13 +13,13 @@ const Ggulggeok = () => {
                     height={500}/>
                 </Grid>        
                 <Grid className={styles.container} xs={12} sm={6} item>
-                <h1>홒 IPA</h1>
-                <p><i>west coast IPA • 6.3% • IBU 55</i></p>
+                <h2>홒 IPA</h2>
+                <h4><i>west coast IPA • 6.3% • IBU 55</i></h4>
                 <span><i><b>Malt:</b> Finest pale ale golden promise, oats, mlated rye, light crystal</i></span>
                 <span><i><b>Hops:</b> Falconers flight, galaxy</i></span>
                 <span><i><b>Yeast:</b> US-05</i></span>
-                <h3>'홒'은 West coast IPA 스타일의 맥주로, 맥주의 여러 스타일 중 '맥주 꽃'이라고 불리는 재료인 'hop'의 캐릭터가 인상적인 술입니다.</h3>
-                <h3>각 종은 저마다 특유의 향을 가지고 있으며 우리는 재미있는 콤보와 적절한 밸런스를 찾아 여러분과 공유하려고 합니다.</h3>
+                <p>'홒'은 West coast IPA 스타일의 맥주로, 맥주의 여러 스타일 중 '맥주 꽃'이라고 불리는 재료인 'hop'의 캐릭터가 인상적인 술입니다.</p>
+                <p>각 종은 저마다 특유의 향을 가지고 있으며 우리는 재미있는 콤보와 적절한 밸런스를 찾아 여러분과 공유하려고 합니다.</p>
                 </Grid>
         </Grid>
         </div>

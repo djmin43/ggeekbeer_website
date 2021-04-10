@@ -11,23 +11,23 @@
     flex-direction: column;
 }
 
-
-.beer h1{
-    font-size: calc(64px + 1vw);
-    font-weight: 500;
-    margin-bottom: 1vw;
+.beer h2{
+    margin: 1vw 0;
 }
 
-.beer h3 {
-    font-size: calc(8px + 1vw);
-    font-weight: 400;
-    margin-top: 1.6vw;
+.beer h4 {
+    
+    margin: 1vw 0;
+}
+
+.beer span {
+    color: #4D5275;
+    margin: 0.05vw 0;
 }
 
 .beer p{
-    font-size: calc(8px + 1vw);
-    font-weight: 300;
-    margin-bottom: 0.75vw;
+    margin: 1vw 0;
+    
 }
 
 

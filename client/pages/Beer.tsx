@@ -16,7 +16,7 @@ const Beer = () => {
                 <Grid  item xs={12} sm={6} md={4} >
                     <Card className={styles.card} elevation={4}>
                         <h2>꿀꺽</h2>
-                        <h3>'꿀꺽'은 라거 맥주로, 맥주의 많은 매력들 중 '다가가기 쉬움'과 '마시기 편함'을 잘 보여주는 스타일입니다. 우리는 여기에 중점을 두고 '홉'의 개성을 부드럽게 살려주고자 노력했습니다.</h3>
+                        <h4>'꿀꺽'은 라거 맥주로, 맥주의 많은 매력들 중 '다가가기 쉬움'과 '마시기 편함'을 잘 보여주는 스타일입니다. 우리는 여기에 중점을 두고 '홉'의 개성을 부드럽게 살려주고자 노력했습니다.</h4>
                         <p><i>german lager • 4.6% • IBU 18</i></p>
                         <Link href="/beers/Ggulggeok"><Button color="primary" variant="outlined" fullWidth>더 알아보기</Button></Link>
                     </Card>

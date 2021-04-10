@@ -17,14 +17,11 @@
 
   
   .front h1 {
-    font-size: calc(64px + 1vw);
     margin: 5vw;
     text-align: center;
   }
   
-  .front h2 {
-    font-size: calc(16px + 1vw)
-  }
+
   
   /* Buttons */
 
