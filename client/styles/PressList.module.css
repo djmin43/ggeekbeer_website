@@ -1,0 +1,17 @@
+.slideshow {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    padding: 5vw 10vw;
+    height: 70vh;
+}
+
+
+
+.slideshow p {
+    margin: 1vw;
+}

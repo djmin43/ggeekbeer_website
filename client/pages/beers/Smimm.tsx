@@ -13,7 +13,7 @@ const Smimm = () => {
                     height={500}/>
                 </Grid>        
                 <Grid className={styles.container} xs={12} sm={6} item>
-                <h2>스밈</h2>
+                <h1>스밈</h1>
                 <h4><i>Craft Ale • 5.5% • IBU 44</i></h4>
                 <p><i><b>형태:</b>Keg(발주가능) • Bottle(준비중)</i></p>
                 <span><i><b>Malt:</b> ?</i></span>

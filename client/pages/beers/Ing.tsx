@@ -13,7 +13,7 @@ const Ing = () => {
                     height={500}/>
                 </Grid>        
                 <Grid className={styles.container} xs={12} sm={6} item>
-                <h2>잉</h2>
+                <h1>잉</h1>
                 <h4><i>new england IPA• 6.8% • IBU 40</i></h4>
                 <span><i><b>Malt:</b> Extra pale ale, oats, malted wheat</i></span>
                 <span><i><b>Hops:</b> El dorado, galaxy, citra</i></span>

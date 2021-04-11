@@ -1,9 +1,11 @@
 import React from 'react'
-import BlackIPA from './BlackIPA'
-import Ggulggeok from './Ggulggeok'
-import HopIPA_3 from './HopIPA_3'
-import Smimm from './Smimm'
-import Ing from './Ing'
+import Ggulggeok from './ggulggeok'
+import Ing from './ing'
+import Smimm from './smimm'
+import BlackIPA from './blackipa'
+import HopIPA_3 from './hopipa_3'
+
+
 
 const index = () => {
     return (

@@ -13,7 +13,7 @@ const Ggulggeok = () => {
                     height={500}/>
                 </Grid>        
                 <Grid className={styles.container} xs={12} sm={6} item>
-                <h2>새검정 IPA</h2>
+                <h1>새검정 IPA</h1>
                 <h4><i>Black IPA • 7.0% • IBU 63</i></h4>
                 <p><i><b>형태:</b>Keg(발주가능) • Bottle(330ml)</i></p>
                 <span><i><b>Malt:</b> Finest lager malt and dextrin malt</i></span>

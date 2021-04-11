@@ -8,6 +8,10 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 h1 {
@@ -37,4 +41,13 @@ p{
 
 span{
   font-size: calc(6px + 1vw)
+}
+
+.news {
+  text-align: center;
+  padding: 5vw;
+}
+
+.news img {
+  height: 40vh;
 }

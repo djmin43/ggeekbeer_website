@@ -13,7 +13,7 @@ const Ggulggeok = () => {
                     height={500}/>
                 </Grid>        
                 <Grid className={styles.container} xs={12} sm={6} item>
-                <h2>홒 IPA</h2>
+                <h1>홒 IPA</h1>
                 <h4><i>west coast IPA • 6.3% • IBU 55</i></h4>
                 <span><i><b>Malt:</b> Finest pale ale golden promise, oats, mlated rye, light crystal</i></span>
                 <span><i><b>Hops:</b> Falconers flight, galaxy</i></span>
