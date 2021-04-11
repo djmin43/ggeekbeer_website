@@ -1,9 +1,9 @@
 import React from 'react'
-import Ggulggeok from './ggulggeok'
 import Ing from './ing'
 import Smimm from './smimm'
 import BlackIPA from './blackipa'
 import HopIPA_3 from './hopipa_3'
+import Ggulggeok from './ggulggeok'
 
 
 
