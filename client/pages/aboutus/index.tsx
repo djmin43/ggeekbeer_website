@@ -51,7 +51,7 @@ const index = () => {
                 duration={1600}
                 // offset={345}
                 // triggerHook={0}
-                pin='#pouring'
+                pin={true}
                 triggerElement='#pouring'
                 >
                     <div id="pouring">

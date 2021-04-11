@@ -19,7 +19,7 @@ const Beer = () => {
         {/* Regular Line */}
         <h1 >Year-round</h1>
         <Grid container spacing={5}>
-        {regular.map(item => <Grid  item xs={12} sm={6} md={4} >
+        {regular.map(item => <Grid  item xs={12} sm={6} md={4} key={item.id}>
                     <Card className={styles.card} elevation={4}>
                     <h2>{item.name}</h2>
                     <h4>{item.descriptionShort}</h4>
@@ -32,7 +32,7 @@ const Beer = () => {
         {/* Seasonals */}
         <h1>Seasonals</h1>
             <Grid container spacing={5}>
-            {seasonal.map(item => <Grid  item xs={12} sm={6} md={4} >
+            {seasonal.map(item => <Grid  item xs={12} sm={6} md={4} key={item.id}>
                     <Card className={styles.card} elevation={4}>
                     <h2>{item.name}</h2>
                     <h4>{item.descriptionShort}</h4>
