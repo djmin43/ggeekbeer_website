@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import ContactUs from './contactus'
-import BeerList from './beerlist'
-import About from './about'
-import NewsList from './newslist'
+import Head from 'next/head';
+import BeerList from './beerlist';
+import About from './about';
+import NewsList from './newslist';
+import ContactUs from './contactus';
 
 export default function Home() {
   return (
