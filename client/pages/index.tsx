@@ -1,8 +1,8 @@
 import Head from 'next/head';
-import About from './about.js';
-import NewsList from './newslist.js';
-import BeerList from './beerlist.js';
-import ContactUs from './contactus.js';
+import About from './intro';
+import NewsList from './news_list';
+import BeerList from './beer_list';
+import ContactUs from './contact_us';
 
 export default function Home() {
   return (
@@ -19,5 +19,5 @@ export default function Home() {
       <ContactUs />
 
     </>
-  )
-}
+  );
+};
