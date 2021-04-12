@@ -1,10 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import styles from '../../styles/News.module.css'
+import Button from '@material-ui/core/Button'
+import Link from 'next/link'
+import Image from 'next/image'
+
+interface News {
+    id: number;
+    name: string;
+    date: string;
+    description: string;
+    image: string;
+    link: string;
+};
 
 const index = () => {
+
+    const [news, setNews] = useState<News[]>([]);
+
+    const getNewsData = async () => {
+        const res = await fetch('/newsdata.json');
+        const data = await res.json();
+        setNews(data);
+    };
+
+    useEffect(() => {
+        getNewsData();
+    }, []);
+
     return (
         <div>
-            News 
-            to be updated..!
+            {news.map((item: News) => <div className={styles.news} key={item.id}>
+                <Image src={item.image} width={300} height={300} className={styles.image}/>
+                <span><i>{item.date}</i></span>
+                <h2>{item.name}</h2>
+                <p>{item.description}</p>
+                <Link href={item.link}><Button color="primary" variant="outlined" component="button" fullWidth>더 알아보기</Button></Link>
+            </div>)}
         </div>
     )
 }

@@ -12,7 +12,6 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.3",
     "@types/js-cookie": "^2.2.6",
-    "@types/scrollmagic": "^2.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "js-cookie": "^2.2.1",
@@ -21,8 +20,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-material-ui-carousel": "^2.2.4",
-    "react-scrollmagic": "^2.3.0",
-    "scrollmagic": "^2.0.8"
+    "react-scrollmagic": "^2.3.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.37",

@@ -1,7 +1,7 @@
 .beer {
     padding: 5vw;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/beer.jpg') no-repeat center center ;
+    color: #000000;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/beer.jpg') no-repeat center center ; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

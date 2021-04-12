@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from '@material-ui/core/Card';
 import Link from 'next/link'
 import Grid from '@material-ui/core/Grid';
@@ -23,13 +23,16 @@ const beerlist = () => {
     const [regular, setRegular] = useState<Beer[]>([])
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
-    useState(async () =>{
+    const getBeerData = async () => {
         const res = await fetch('/beerdata.json');
         const data = await res.json();
         setRegular(data.regular);
         setSeasonal(data.seasonal);
-    }
-    ), [];
+    };
+
+    useEffect (() => {
+        getBeerData();
+    }, [])
 
 
     return (
