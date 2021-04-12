@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { NewsContext } from '../../comps/contexts/NewsContext'
 
 
-const news_1 = () => {
+const news_3 = () => {
 
     
     const news: any = useContext(NewsContext);
@@ -18,4 +18,4 @@ const news_1 = () => {
     )
 }
 
-export default news_1
+export default news_3
