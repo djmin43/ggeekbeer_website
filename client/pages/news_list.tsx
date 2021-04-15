@@ -51,8 +51,8 @@ const newslist = () => {
         };
 
 
-const Item = ( {item}: any) =>{
-    
+    const Item = ( {item}: any) =>{
+        
     // Had to style background image separately to get image link prop
     const imageStyle: CSS.Properties = {
         background: `url(${item.image}) center center`,
@@ -63,12 +63,13 @@ const Item = ( {item}: any) =>{
     return (
         <div >
         <div style={imageStyle} className={styles.slideshow}>
-            <img src={item.image} width="500" height="500"/> 
+            {/* <img src={item.image} width="500" height="500"/>  */}
             <h1>{item.name}</h1>
             <p>{item.description}</p>
             <Link href={`/news`}><Button color="primary" variant="contained" fullWidth>더 알아보기</Button></Link>
         </div>
         </div>
-    )
-}
+    );
+};
+
 export default newslist

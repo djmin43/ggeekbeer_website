@@ -6,6 +6,9 @@ import Cookies from 'js-cookie'
 import Front from '../comps/Front'
 import { useState, useEffect } from 'react'
 
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from '../src/theme';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -15,6 +18,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if(Cookies.get('age') !== 'yes'){
       setLegalPage(true)
+
+
+      // const jssStyles = document.querySelector('#jss-server-side');
+      // if (jssStyles) {
+      //   jssStyles.parentElement!.removeChild(jssStyles);
+      // }
     } 
   }, [])
 
@@ -23,13 +32,19 @@ function MyApp({ Component, pageProps }: AppProps) {
     <Head>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+
+    {/* <ThemeProvider theme={theme}>
+      <CssBaseline />   */}
       {legalPage === false ? 
       <Layout>
       <Component {...pageProps} />
       </Layout>
       : <Front />}
+
+    {/* </ThemeProvider> */}
     </>
   )
 }
 
 export default MyApp
+

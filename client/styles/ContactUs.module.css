@@ -12,7 +12,7 @@
 }
 
 .card {
-    padding: 5vw 2.5vw;
+    padding: 5vw 5vw;
 }
 
 .card h2{
@@ -20,14 +20,10 @@
     text-align: center;
 }
 
-.card form input{
-    margin-bottom: 0.75vw;
-    outline: none;
-    width: 100%;
+.card h4 {
+    font-size: calc(3px + 1vw);
 }
 
-.card form textarea {
-    margin-bottom: 0.75vw;
-    outline: none;
-    width: 100%
+.card button {
+    margin-top: 3vw;;
 }

@@ -3,7 +3,29 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 const PASSWORD = process.env.PASSWORD
 
+interface Email {
+  name: string;
+  email: string;
+  phoneNumber: string;
+  contents: string;
+}
+
 export default  async (req: NextApiRequest, res: NextApiResponse) => {
+
+  const { name, email, phoneNumber, contents } = await req.body;
+
+  const formValidator = (name: string, email: string, phoneNumber:string, contents:string) => {
+    const re = /^[^\s@]+@[^\s@]+$/;
+    const code: string[] = []
+    if (re.test(email) === false) {
+      code.push('invalid email')
+      res.status(200).json({message:'올바른 이메일을 적어주세요.', code})
+      console.log(email)
+    };
+  };
+
+  await formValidator(name, email, phoneNumber, contents)
+
   const transporter = await nodemailer.createTransport({
     port: 465,
     host: 'smtp.gmail.com',
@@ -15,33 +37,30 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
   });
 
   const mailList = [
-    'dj.min43@gmail.com',
+    'dj.min43@gmail.com'
   ]
-
+  
   const mailData = {
-    from: 'dummy.min43@gmail.com',
     to: mailList,
-    subject: `Message From ${req.body.name}`,
-    text: req.body.contents,
+    subject: `Message From ${name}`,
+    text: contents,
     html: `<div>
-          <p>이름: ${req.body.name}</p><br>
-          <p>email: ${req.body.email}</p><br>
-          <p>phone number: ${req.body.phoneNumber}</p><br>
-          <p>message: ${req.body.contents}<p>
-
+          <p>이름: ${name}</p><br>
+          <p>email: ${email}</p><br>
+          <p>phone number: ${phoneNumber}</p><br>
+          <p>message: ${contents}<p>
           </div>`
   };
 
   await transporter.sendMail(mailData, function(err:any, info:any) {
     if (err){
       console.log(err)
-      res.status(400).json({message: '통신에러: 010-7199-4154로 문의 부탁드립니다.'})
+      res.status(400).json({message: '에러: 010-7199-4154로 문의 부탁드립니다.', code:['network_error']})
     } else {
       console.log(info)
-      res.status(200).json({message: '고맙습니다. 담당자가 확인 후 연락드리겠습니다.'})
+      // if the connection is successful, the code value will be an empty string.
+      res.status(200).json({message: '고맙습니다. 담당자가 확인 후 연락드리겠습니다.', code: ['']})
     }
   });
-
-  res.status(200);
-  
 };
+
