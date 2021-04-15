@@ -12,19 +12,30 @@ interface Email {
 
 export default  async (req: NextApiRequest, res: NextApiResponse) => {
 
-  const { name, email, phoneNumber, contents } = await req.body;
+  const { name, email, phone, contents } = await req.body;
+  const re = /^[^\s@]+@[^\s@]+$/;
+  const code: string[] = [];
+  const formValidator = (name: string, email: string, phone:string, contents:string) => {
 
-  const formValidator = (name: string, email: string, phoneNumber:string, contents:string) => {
-    const re = /^[^\s@]+@[^\s@]+$/;
-    const code: string[] = []
     if (re.test(email) === false) {
-      code.push('invalid email')
-      res.status(200).json({message:'올바른 이메일을 적어주세요.', code})
-      console.log(email)
+      code.push('invalid email ')
     };
+    if (name.length < 2 ) {
+      code.push('name too short ')
+    };
+    if (phone.length < 8 || phone.length > 20) {
+      code.push('phone number too short & long')
+    };
+    if (contents.length < 10 || contents.length > 1000) {
+      code.push('contents too short & long ')
+    };
+    if (code.length > 0) {
+      res.status(400).json({msg: 'Invalid request 400', code})
+      process.exit();
+    }
   };
 
-  await formValidator(name, email, phoneNumber, contents)
+  await formValidator(name, email, phone, contents)
 
   const transporter = await nodemailer.createTransport({
     port: 465,
@@ -47,7 +58,7 @@ export default  async (req: NextApiRequest, res: NextApiResponse) => {
     html: `<div>
           <p>이름: ${name}</p><br>
           <p>email: ${email}</p><br>
-          <p>phone number: ${phoneNumber}</p><br>
+          <p>phone number: ${phone}</p><br>
           <p>message: ${contents}<p>
           </div>`
   };
