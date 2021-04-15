@@ -70,8 +70,8 @@ const ContactUs = () => {
                 },
                 body: JSON.stringify(form)
             });
-            const data = await res.json();
             await setSubmitted('true');
+            const data = await res.json();
             setErrorMessage(data);
         } catch(err) {
             setErrorMessage(err)
