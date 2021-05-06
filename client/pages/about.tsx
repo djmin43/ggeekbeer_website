@@ -13,7 +13,7 @@ const About = () => {
             <div  className={styles.about} id="about">
                     <Grid  container>
                     <Grid xs={12} sm={4} item>
-                
+                        <img className={styles.images} src="/ggeek_logo_flag.jpeg"/>
                     </Grid>        
                     <Grid className={styles.container} xs={12} sm={8} item>
                     <p className={styles.korean}>경기도 고양시 덕양구에 위치한 '끽 비어 컴퍼니'는 다섯 명의 양조 전문 인력이 맥주에 대한 철학과 열정을 맛있는 Craft Beer에 고스란히 담아내는 곳입니다.</p>
