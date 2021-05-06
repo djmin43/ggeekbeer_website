@@ -44,7 +44,7 @@ const index = () => {
                     <img className={styles.images} src={item.image} />
             </Grid>
             <Grid  className={styles.container} xs={12} sm={6} item>
-                <h1>{item.name}</h1>
+                <h2>{item.name}</h2>
                 <h4><i>{item.summary}</i></h4>
                 <span><i>{item.ingredients}</i></span>
                 <p>{item.descriptionLong}</p>
