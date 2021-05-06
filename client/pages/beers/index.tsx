@@ -19,18 +19,22 @@ const index = () => {
     const [regular, setRegular] = useState<Beer[]>([])
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
-    useState(async () =>{
+
+    const getBeersData = async () => {
         try {
-        const res = await fetch('/beerdata.json');
-        const data = await res.json();
-        setRegular(data.regular);
-        setSeasonal(data.seasonal);
-        } catch(error) {
+            const res = await fetch('/beerdata.json');
+            const data = await res.json();
+            console.log(data)
+            setRegular(data.regular)
+            setSeasonal(data.seasonal)
+        } catch (error) {
             console.log(error)
         }
     }
-    ), [];
 
+    useEffect(() => {
+        getBeersData()
+    }, [])
 
     return (
         <div className={styles.beer} >
@@ -38,7 +42,7 @@ const index = () => {
             {regular.map((item: Beer) =>
             <>
             <Grid xs={12} sm={6} item>
-                <Image src={item.image} width={500} height={500}/>
+                {/* <Image src={item.image} width={500} height={500}/> */}
             </Grid>
             <Grid className={styles.container} xs={12} sm={6} item>
                 <h1>{item.name}</h1>
