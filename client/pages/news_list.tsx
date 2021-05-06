@@ -4,7 +4,6 @@ import Button from '@material-ui/core/Button';
 import styles from '../styles/NewsList.module.css';
 import CSS from 'csstype';
 import Link from 'next/link';
-import axios from 'axios'
 
 interface News {
     id: number;
@@ -20,8 +19,9 @@ const newslist = () => {
     const [news, setNews] = useState<News[]>([]);
 
     const getNewsData = async () => {
-        const res = await axios.get('http://localhost:3000/newsdata.json');
-        setNews(res.data);
+        const res = await fetch('/newsdata.json');
+        const data = await res.json();
+        setNews(data);
     };
 
     useEffect(() => {

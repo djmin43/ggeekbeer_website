@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from '../styles/Intro.module.css';
+import React from 'react'
 
 
 
@@ -7,7 +6,7 @@ const About = () => {
 
     
     return (
-        <div className={styles.main}>
+        <div>
             
         </div>
 

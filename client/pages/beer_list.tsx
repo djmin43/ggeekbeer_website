@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import styles from '../styles/BeerList.module.css';
-import axios from 'axios'
+
 
 
 interface Beer {
@@ -24,9 +24,10 @@ const beerlist = () => {
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
     const getBeerData = async () => {
-        const res = await axios.get('http://localhost:3000/beerdata.json')
-        setRegular(res.data.regular);
-        setSeasonal(res.data.seasonal);
+        const res = await fetch('/beerdata.json');
+        const data = await res.json();
+        setRegular(data.regular);
+        setSeasonal(data.seasonal);
     };
 
     useEffect (() => {

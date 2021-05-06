@@ -1,24 +1,19 @@
-.container {
-    background-color: #fff;
-    height: 10vh;
-    position: sticky;
-    top: 0;
-    z-index: 3; 
-    padding: 1vw;
-    margin: 2vw;
-}
-
 .navbar {
     background-color: #fff;
+    height: 7vh;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: sticky;
+    top: 0;
+    z-index: 3; 
+
+
 }
 
-
 .navbar a{
-    font-size: calc(3px + 1vw);
+    font-size: calc(12px + 1vw);
     text-decoration: none;
     color: #000000;
     padding-right: 1.7vw;
@@ -30,6 +25,3 @@
 .navbar a:hover {
     transform: scale(1.1); 
 }
-
-
-
