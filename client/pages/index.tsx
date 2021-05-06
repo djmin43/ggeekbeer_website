@@ -15,8 +15,8 @@ export default function Home() {
     </Head>
       <Intro />
       <About />
-      <NewsList />
-      <BeerList />
+      {/* <NewsList />
+      <BeerList /> */}
       <ContactUs />
     </>
   );

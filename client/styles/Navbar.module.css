@@ -1,4 +1,4 @@
-.navbar {
+.container {
     background-color: #fff;
     height: 7vh;
     width: 100vw;
@@ -8,12 +8,20 @@
     position: sticky;
     top: 0;
     z-index: 3; 
+}
 
-
+.navbar {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 3; 
 }
 
 .navbar a{
-    font-size: calc(12px + 1vw);
+    font-size: calc(6px + 1vw);
     text-decoration: none;
     color: #000000;
     padding-right: 1.7vw;
