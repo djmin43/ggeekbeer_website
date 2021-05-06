@@ -1,6 +1,6 @@
 .beer {
     color: #000000;
-    margin-bottom: 5vw;
+    margin: 5vw;
     padding: 5vw;
     display: flex;
     align-items: center;
@@ -16,7 +16,6 @@
 }
 
 .beer h4 {
-    
     margin: 1vw 0;
 }
 

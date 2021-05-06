@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Grid from '@material-ui/core/Grid'
 import Image from 'next/image'
 import styles from '../../styles/Beer.module.css'
+import axios from 'axios'
 
 interface Beer {
     id: number;
@@ -21,10 +22,9 @@ const index = () => {
 
     useState(async () =>{
         try {
-        const res = await fetch('/beerdata.json');
-        const data = await res.json();
-        setRegular(data.regular);
-        setSeasonal(data.seasonal);
+        const res = await axios.get('http://localhost:3000/beerdata.json');
+        setRegular(res.data.regular);
+        setSeasonal(res.data.seasonal);
         } catch(error) {
             console.log(error)
         }

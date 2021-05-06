@@ -4,6 +4,8 @@ import NewsList from './news_list';
 import BeerList from './beer_list';
 import ContactUs from './contact_us';
 import Intro from './intro';
+import Beers from './beers/index';
+
 
 export default function Home() {
   return (
@@ -15,8 +17,8 @@ export default function Home() {
     </Head>
       <Intro />
       <About />
-      {/* <NewsList /> */}
-      {/* <BeerList /> */}
+      <Beers />
+      
       <ContactUs />
     </>
   );

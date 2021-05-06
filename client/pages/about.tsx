@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 
 
+
 const About = () => {
 
     
@@ -13,7 +14,7 @@ const About = () => {
             <div  className={styles.about} id="about">
                     <Grid  container>
                     <Grid xs={12} sm={4} item>
-                        <Image src="/ggeek_logo.jpeg" alt="끽비어 로고" 
+                        <Image src="/ggeek_logo_flag.jpeg" alt="끽비어 로고" 
                         width={500}
                         height={500}/>
                     </Grid>        
