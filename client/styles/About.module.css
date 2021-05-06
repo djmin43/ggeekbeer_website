@@ -1,0 +1,29 @@
+.about {
+    color: #000000;
+    height: 90vh;
+    margin-bottom: 2.5vw;
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video {
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+}
+
+.korean {
+    margin: 1vw;
+}
+
+.english {
+    color: #5A6780;
+    margin: 1vw;
+}

@@ -6,7 +6,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 /* Our Beers */
@@ -34,6 +33,7 @@
 }
 
 .card p {
+    padding: 1vw;
     text-align: center;
     margin-bottom: 1.5vw;
     color: #4D5275;

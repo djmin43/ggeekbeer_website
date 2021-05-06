@@ -4,60 +4,27 @@
     "regular": [
 
     {
-    
         "id": 1,
-        "name": "꿀꺽",
-        "summary":"german lager • 4.6% • IBU 18",
-        "ingredients":"Malt: Finest lager malt and dextrin malt \n Hops: American cascade, centennial, columbus, and german noble variety \n Yeast: W-34/70 Germal Lager",
+        "name": "꿀꺽 Ggul Ggeok - Craft Lager",
+        "summary":"형태: Keg, Bottle(330ml)",
+        "ingredients":"ABV: 4.6% • IBU: 18",
         "format":"",
-        "descriptionShort": "'꿀꺽'은 라거 맥주로, 맥주의 많은 매력들 중 '다가가기 쉬움'과 '마시기 편함'을 잘 보여주는 스타일입니다. 우리는 여기에 중점을 두고 '홉'의 개성을 부드럽게 살려주고자 노력했습니다.",
-        "descriptionLong": "맥주만 드시기엔 조금 심심하셨죠? 끽 비어에서 간단하게 드실 수 있게 새로운 메뉴를 준비 했습니다. 2월 3일(수) 부터 을지로 PUB에서 판매 됩니다. \n 편안하게 다가가면서 메인 스트림과 다른 크래프트 맥주의 매력을 소개하고 싶었습니다. 크래프트 맥주를 좋아하는 사람들, 처음 접하게 될 사람들 간의 경계를 허물고 모두 즐길 수 있는 술이 되길 바랍니다.",
-        "image": "/ggeek_logo.jpeg"
-    },
-    {   
-        "id": 2,
-        "name": "잉",
-        "summary":"new england IPA • 6.8% • IBU 40",
-        "ingredients":"Malt: Extra pale ale, oats, malted wheat \n Hops: El dorado, galaxy, citra \n Yeast: English ale strain",
-        "format":"",
-        "descriptionShort": "'잉'은 New England IPA 스타일의 맥주로, 뉴잉, 혹은 NEW IPA라고 부르는 이 스타일은 IPA가 가지는 홉의 과일, 꽃과 같은 긍정적인 향이 극대화되어 터져나오며 적절한 단 맛과 조화를 이루는 juice같은 맥주입니다. 사용된 홉의 양과 질감을 살리기 위해 들어간 귀리, 밀 등의 재료로 인하여 다소 혼탁한 외관을 가집니다.",
-        "descriptionLong": "'잉'은 New England IPA 스타일의 맥주로, 뉴잉, 혹은 NEW IPA라고 부르는 이 스타일은 IPA가 가지는 홉의 과일, 꽃과 같은 긍정적인 향이 극대화되어 터져나오며 적절한 단 맛과 조화를 이루는 juice같은 맥주입니다. 사용된 홉의 양과 질감을 살리기 위해 들어간 귀리, 밀 등의 재료로 인하여 다소 혼탁한 외관을 가집니다. \n '홉'IPA를 만들며 설명드린 바와 같이 홉 종들은 저마다 특유의 향을 가지고 있으며 우리는 재미잇는 콤보와 적절한 밸런스를 찾아 여러분과 공유하려고 합니다.",
-        "image": "/ggeek_logo.jpeg"
+        "descriptionShort": "",
+        "descriptionLong": "'꿀꺽'은 크래프트 라거로 맥주의 많은 매력들 중 다가가기 쉽고 마시기 편한 장점을 가진 맥주입니다. 여기에 '홉'의 개성을 부드럽게 살려주고자 노력했습니다. 편안하게 소비자에게 다가가며, 메인 스트림과 다른 크래프트 맥주의 매력을 보여주고 싶었습니다. 크래프트 맥주를 좋아하는 사람들, 처음 접하게 될 사람들 간의 경계를 허물고 모두 즐길 수 있는 '꿀꺽'이 되길 바랍니다.",
+        "image": "/ggulggeok_bottle.jpg"
     },
     {   
         "id": 3,
-        "name": "스밈",
-        "summary":"Craft Ale • 5.5% • IBU 44",
-        "ingredients":"Malt: ? \n Hops: ? \n Yeast: ?",
-        "format":"형태:Keg(발주가능) • Bottle(준비중)",
-        "descriptionShort": "'스밈'은 크래프트 에일로 호밀과 카라멜 몰트를 절제하여 사용해 뽑아낸 몰트 캐릭터와 은은한 효모 에스테르의 바탕 위에 팔코너스 플라이트, 심코 홉을 사용하여 레몬, 자몽의 시트러스한 느낌과 꽃향을 가진 홉 캐릭터가 주를 이루는 맥주입니다.",
-        "descriptionLong": "'스밈'은 크래프트 에일로 호밀과 카라멜 몰트를 절제하여 사용해 뽑아낸 몰트 캐릭터와 은은한 효모 에스테르의 바탕 위에 팔코너스 플라이트, 심코 홉을 사용하여 레몬, 자몽의 시트러스한 느낌과 꽃향을 가진 홉 캐릭터가 주를 이루는 맥주입니다. \n 향에서 시작되는 달달한 뉘앙스에서 시작해 민트, 허브와 같은 상쾌한 피니시가 특징입니다.",
-        "image": "/ggeek_logo.jpeg"
+        "name": "스밈 Smimm - Craft Ale",
+        "summary":"형태: Keg, Bottle(330ml)",
+        "ingredients":"ABV: 5.5% • IBU: 55",
+        "format":"",
+        "descriptionShort": "",
+        "descriptionLong": "'스밈'은 크래프트 메일로 호밀과 카라멜 몰트를 절제하여 사용해 뽑아낸 몰트 캐릭터와 은은한 효모 에스테르의 바탕 위에 팔코너스 플라이트, 심코 홉을 사용하여 레몬, 자몽의 시트러스한 느낌과 꽃향을 가진 홉 캐릭터가 주를 이루는 맥주입니다. 향에서 시작되는 달달한 뉘앙스에서 시작해 민트, 허브와 같은 상쾌한 피니시가 특징입니다.",
+        "image": "/smimm_bottle.jpg"
     }
     ],
-    "seasonal": [
-        
-        {   
-            "id": 1,
-            "name": "새검정 IPA",
-            "summary":"Black IPA • 7.0% • IBU 63",
-            "ingredients":"Malt: Finest lager malt and dextrin malt \n Hops: American cascade, centennial, columbus, and german noble variety \n Yeast: W-34/70 Germal Lager",
-            "format":"형태:Keg(발주가능) • Bottle(330ml)",
-            "descriptionShort": "'새검정'은 Black IPA / Cascadian Dark Ale 스타일로, IPA 스타일로 베이스로 검은 맥아의 조심스러운 사용을 통해 색과 캐릭터에 변화를 준 맥주입니다. 과실 향이 메인 캐릭터를 이루고, 코코아와 같은 힌트가 이를 받쳐주며 밸런스를 이룹니다.",
-            "descriptionLong": "'새검정'은 Black IPA / Cascadian Dark Ale 스타일로, IPA 스타일로 베이스로 검은 맥아의 조심스러운 사용을 통해 색과 캐릭터에 변화를 준 맥주입니다. 과실 향이 메인 캐릭터를 이루고, 코코아와 같은 힌트가 이를 받쳐주며 밸런스를 이룹니다. \n 이 맥주는 'Bottle conditioning' 기법을 활용해 패키징 된 맥주로, 부드러운 탄산 질감을 가집니다. 케그와 병에서 2차 발효 및 숙성된 제품입니다. 냉장 보관 후 음용해 주세요.",
-            "image": "/ggeek_logo.jpeg"
-        },
-        {   
-            "id": 2,
-            "name": "홒 IPA",
-            "summary":"west coast IPA • 6.3% • IBU 55",
-            "ingredients":"Malt: Finest pale ale golden promise, oats, mlated rye, light crystal \n Hops: Falconers flight, galaxy \n Yeast: US-05",
-            "format":"",
-            "descriptionShort": "'홒'은 West coast IPA 스타일의 맥주로, 맥주의 여러 스타일 중 '맥주 꽃'이라고 불리는 재료인 'hop'의 캐릭터가 인상적인 술입니다.",
-            "descriptionLong": "'홒'은 West coast IPA 스타일의 맥주로, 맥주의 여러 스타일 중 '맥주 꽃'이라고 불리는 재료인 'hop'의 캐릭터가 인상적인 술입니다. \n 각 종은 저마다 특유의 향을 가지고 있으며 우리는 재미있는 콤보와 적절한 밸런스를 찾아 여러분과 공유하려고 합니다",
-            "image": "/ggeek_logo.jpeg"
-        }
-    ]
+    "seasonal": []
 }
 
 

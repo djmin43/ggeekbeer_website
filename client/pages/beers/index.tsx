@@ -12,7 +12,7 @@ interface Beer {
     descriptionShort: string;
     descriptionLong: string;
     image: string;
-}
+};
 
 const index = () => {
 
@@ -20,22 +20,28 @@ const index = () => {
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
     useState(async () =>{
+        try {
         const res = await fetch('/beerdata.json');
         const data = await res.json();
         setRegular(data.regular);
         setSeasonal(data.seasonal);
+        } catch(error) {
+            console.log(error)
+        }
     }
     ), [];
-
 
     return (
         <div className={styles.beer} >
         <Grid  container>
+            {/* Regular Lineup */}
             {regular.map((item: Beer) =>
             <>
+            {/* Beer Image */}
             <Grid xs={12} sm={6} item>
                 <Image src={item.image} width={500} height={500}/>
             </Grid>
+            {/* Beer Description */}
             <Grid className={styles.container} xs={12} sm={6} item>
                 <h1>{item.name}</h1>
                 <h4><i>{item.summary}</i></h4>
