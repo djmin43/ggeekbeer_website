@@ -13,7 +13,7 @@ interface Beer {
     descriptionShort: string;
     descriptionLong: string;
     image: string;
-};
+}
 
 const index = () => {
 
@@ -21,6 +21,7 @@ const index = () => {
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
     useState(async () =>{
+<<<<<<< HEAD
         try {
         const res = await axios.get('http://localhost:3000/beerdata.json');
         setRegular(res.data.regular);
@@ -28,20 +29,24 @@ const index = () => {
         } catch(error) {
             console.log(error)
         }
+=======
+        const res = await fetch('/beerdata.json');
+        const data = await res.json();
+        setRegular(data.regular);
+        setSeasonal(data.seasonal);
+>>>>>>> parent of 953b7d3... request update from client
     }
     ), [];
+
 
     return (
         <div className={styles.beer} >
         <Grid  container>
-            {/* Regular Lineup */}
             {regular.map((item: Beer) =>
             <>
-            {/* Beer Image */}
             <Grid xs={12} sm={6} item>
                 <Image src={item.image} width={500} height={500}/>
             </Grid>
-            {/* Beer Description */}
             <Grid className={styles.container} xs={12} sm={6} item>
                 <h1>{item.name}</h1>
                 <h4><i>{item.summary}</i></h4>

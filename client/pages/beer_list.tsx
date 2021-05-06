@@ -41,7 +41,7 @@ const beerlist = () => {
         {regular.map((item: Beer) => <Grid  item xs={12} sm={6} md={4} key={item.id}>
                     <Card className={styles.card} elevation={4}>
                     <h2>{item.name}</h2>
-                    <p>{item.descriptionLong}</p>
+                    <h4>{item.descriptionShort}</h4>
                     <p><i>{item.summary}</i></p>
                         <Link href="/beers"><Button color="primary" variant="outlined" fullWidth>더 알아보기</Button></Link>
                     </Card>
