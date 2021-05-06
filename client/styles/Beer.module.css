@@ -11,6 +11,13 @@
     flex-direction: column;
 }
 
+.images {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5vw;
+    object-fit: contain;
+}
+
 .beer h2{
     margin: 1vw 0;
 }
