@@ -21,7 +21,6 @@ const index = () => {
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
     useState(async () =>{
-<<<<<<< HEAD
         try {
         const res = await axios.get('http://localhost:3000/beerdata.json');
         setRegular(res.data.regular);
@@ -29,12 +28,6 @@ const index = () => {
         } catch(error) {
             console.log(error)
         }
-=======
-        const res = await fetch('/beerdata.json');
-        const data = await res.json();
-        setRegular(data.regular);
-        setSeasonal(data.seasonal);
->>>>>>> parent of 953b7d3... request update from client
     }
     ), [];
 
