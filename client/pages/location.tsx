@@ -20,7 +20,7 @@ const location = () => {
     return (
         <div>
             <Head>
-            <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ll2fjdhq8m"></script>
+        
 
                 {/* ll2fjdhq8m */}
             </Head>
