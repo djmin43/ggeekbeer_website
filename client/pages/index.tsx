@@ -8,9 +8,21 @@ import Intro from './intro'
 import Beers from './beers/index'
 import React, { useEffect } from 'react'
 
+export const getStaticProps = async () => {
+
+  const res = await fetch('http://localhost:3000/beerdata.json');
+  const data = await res.json();
+  const regularBeers = data.regular
+  const seasonalBeers = data.seasonal
+
+  return {
+  props: {regularBeers, seasonalBeers}
+  }
+}
 
 
-export default function Home() {
+
+export default function Home({regularBeers, seasonalBeers}: any) {
 
 
   return (
@@ -24,7 +36,7 @@ export default function Home() {
     </Head>
          <Intro />
           <About />
-          <Beers />
+          <Beers regularBeers={regularBeers} seasonalBeers={seasonalBeers}/>
           <Location />
          <ContactUs />
 

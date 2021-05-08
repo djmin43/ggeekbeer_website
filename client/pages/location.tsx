@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Head from 'next/head';
 import styles from '../styles/Location.module.css'
-import GoogleMapReact from 'google-map-react';
-
-export const getStaticProps = async () => {
-
-  
-    return {
-        props: {}
-    }
-}
 
 
 const location = () => {
@@ -22,7 +13,6 @@ const location = () => {
             zoom: 10
         });
     }
-
 
     useEffect(() => {
         initMap()
