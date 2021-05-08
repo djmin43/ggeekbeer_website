@@ -13,29 +13,45 @@ interface Beer {
     image: string;
 }
 
-const index = () => {
-
-    const [regular, setRegular] = useState<Beer[]>([])
-    const [seasonal, setSeasonal] = useState<Beer[]>([])
+export const getStaticProps = async () => {
 
 
-    const getBeersData = async () => {
-        try {
-            const res = await fetch('/beerdata.json');
-            const data = await res.json();
-            console.log(data)
-            await setRegular(data.regular)
-            await setSeasonal(data.seasonal)
-        } catch (error) {
-            console.log(error)
-        }
+    const res = await fetch('/beerdata.json');
+    const data = await res.json();
+    const regularBeers = data.regular
+    const seasonalBeers = data.seasonal
+
+    return {
+    props: {regularBeers, seasonalBeers}
     }
+}
 
-    getBeersData()
+
+const index = ({regularBeers, seasonalBeers}: any) => {
+
+    // const [regular, setRegular] = useState<Beer[]>([])
+    // const [seasonal, setSeasonal] = useState<Beer[]>([])
+
+
+    // const getBeersData = async () => {
+    //     try {
+    //         const res = await fetch('/beerdata.json');
+    //         const data = await res.json();
+    //         console.log(data)
+    //         await setRegular(data.regular)
+    //         await setSeasonal(data.seasonal)
+    //     } catch (error) {
+    //         console.log(error)
+    //     }
+    // }
+
+    useEffect(() => {
+        console.log('regularBeers', regularBeers)
+    }, [])
 
     return (
         <div id="beers" className={styles.beer} >
-        <Grid  container>
+        {/* <Grid  container>
             {regular.map((item: Beer) =>
             <>
             <Grid key={item.id} xs={12} sm={6} item>
@@ -49,7 +65,7 @@ const index = () => {
             </Grid>
             </>
             )}
-        </Grid>
+        </Grid> */}
         </div>
     )
 }

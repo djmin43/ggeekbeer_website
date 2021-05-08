@@ -83,7 +83,7 @@ const ContactUs = () => {
     return (
 
         <ThemeProvider theme={theme} >
-        <div className={styles.contact} id="contactus">
+        <div className={styles.contact} id="contact">
             <h1>Contact us<small>.</small></h1>
             <Card className={styles.card} elevation={4}>
             {submitted === 'false' 

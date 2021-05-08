@@ -3,35 +3,45 @@ import Head from 'next/head';
 import styles from '../styles/Location.module.css'
 import GoogleMapReact from 'google-map-react';
 
+export const getStaticProps = async () => {
 
+  
+    return {
+        props: {}
+    }
+}
 
 
 const location = () => {
 
-    const initMap = async () => {
-        var map = await new naver.maps.Map('map', {
+    var map = null;
+
+    const initMap = () => {
+        map = new naver.maps.Map('map', {
             center: new naver.maps.LatLng(37.3595704, 127.105399),
             zoom: 10
         });
     }
 
-    useEffect(() => {
 
-    initMap()
+    useEffect(() => {
+        initMap()
 
     }, [])
 
     return (
+        <>
+        <Head>
+        </Head>
         <div id="location">
-            <Head>
 
-            </Head>
 
             끽비어 탭하우스는 을지로에 있습니다.
 
         <div id="map" className={styles.maps}></div>
 
       </div>
+      </>
     )
 }
 

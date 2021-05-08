@@ -7,12 +7,8 @@ import ContactUs from './contact_us';
 import Intro from './intro'
 import Beers from './beers/index'
 import React, { useEffect } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+
+
 
 export default function Home() {
 
@@ -24,28 +20,16 @@ export default function Home() {
       <title>끽비어입니다.</title>
       <meta name="title" content="끽비어컴퍼니"></meta>
       <meta name="description" content="한국 크래프트맥주 양조장 끽비어컴퍼니입니다. 을지로 탭하우스에서 만나보실 수 있습니다."></meta>
+      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ll2fjdhq8m"></script>
     </Head>
-    <Router>
-      <Switch>
-        <Route exact path="/intro">
          <Intro />
-        </Route>  
-        <Route exact path="/about">
           <About />
-        </Route>  
-        <Route exact path="/location">
+          <Beers />
           <Location />
-        </Route>  
-        <Route exact path="/contact">
          <ContactUs />
-        </Route>  
 
-
-        {/* <Beers /> */}
         {/* <NewsList />
         <BeerList /> */}
-      </Switch>
-    </Router>
 
     </>
   );
