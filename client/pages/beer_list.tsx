@@ -24,11 +24,17 @@ const beerlist = () => {
     const [seasonal, setSeasonal] = useState<Beer[]>([])
 
     const getBeerData = async () => {
-        const res = await fetch('/beerdata.json');
-        const data = await res.json();
-        setRegular(data.regular);
-        setSeasonal(data.seasonal);
+        try {
+            const res = await fetch('/beerdata.json');
+            const data = await res.json();
+            setRegular(data.regular);
+            setSeasonal(data.seasonal);
+        } catch(error) {
+            console.log(error)
+        }
+ 
     };
+
 
     useEffect (() => {
         getBeerData();

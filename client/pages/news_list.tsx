@@ -19,9 +19,14 @@ const newslist = () => {
     const [news, setNews] = useState<News[]>([]);
 
     const getNewsData = async () => {
-        const res = await fetch('/newsdata.json');
-        const data = await res.json();
-        setNews(data);
+        try {
+            const res = await fetch('/newsdata.json');
+            const data = await res.json();
+            setNews(data);
+        } catch(error) {
+            console.log(error)
+        }
+  
     };
 
     useEffect(() => {
