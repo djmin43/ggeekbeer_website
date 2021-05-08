@@ -19,21 +19,8 @@ interface Beer {
 }
 
 
-export const getStaticProps = async () => {
 
-
-            const res = await fetch('/beerdata.json');
-            const data = await res.json();
-            const regularBeers = data.regular
-            const seasonalBeers = data.seasonal
-
-    return {
-        props: {regularBeers, seasonalBeers}
-    }
-}
-
-
-const beerlist = ({regularBeers, seasonalBeers}: any) => {
+const beerlist = () => {
 
     const [regular, setRegular] = useState<Beer[]>([])
     const [seasonal, setSeasonal] = useState<Beer[]>([])
@@ -53,7 +40,6 @@ const beerlist = ({regularBeers, seasonalBeers}: any) => {
 
     useEffect (() => {
         getBeerData();
-        console.log(regularBeers)
     }, [])
 
 

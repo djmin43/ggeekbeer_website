@@ -4,11 +4,11 @@
     padding: 5vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
 }
 
 .images {
@@ -19,7 +19,8 @@
 }
 
 .beer div {
-    display:inline-block
+    display:inline-block;
+
 }
 
 .beer h2{

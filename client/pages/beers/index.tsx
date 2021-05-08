@@ -16,6 +16,7 @@ interface Beer {
 
 const index = ({regularBeers, seasonalBeers}: any) => {
 
+
     return (
         <div id="beers" className={styles.beer} >
         <Grid  container>
@@ -24,11 +25,13 @@ const index = ({regularBeers, seasonalBeers}: any) => {
             <Grid  xs={12} sm={6} item>
                     <img className={styles.images} src={item.image} />
             </Grid>
-            <Grid  className={styles.container} xs={12} sm={6} item>
-                <h2>{item.name}</h2>
-                <h4><i>{item.summary}</i></h4>
-                <span><i>{item.ingredients}</i></span>
-                <p>{item.descriptionLong}</p>
+            <Grid  xs={12} sm={6} item>
+                <div className={styles.container} >
+                    <h2>{item.name}</h2>
+                    <h4><i>{item.summary}</i></h4>
+                    <span><i>{item.ingredients}</i></span>
+                    <p>{item.descriptionLong}</p>
+                </div>
             </Grid>
             </div>
             )}
