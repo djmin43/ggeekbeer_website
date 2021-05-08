@@ -18,6 +18,10 @@
     object-fit: contain;
 }
 
+.beer div {
+    display:inline-block
+}
+
 .beer h2{
     margin: 1vw 0;
 }

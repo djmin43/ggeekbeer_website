@@ -8,17 +8,7 @@ import Intro from './intro'
 import Beers from './beers/index'
 import React, { useEffect } from 'react'
 
-export const getStaticProps = async () => {
 
-  const res = await fetch('http://localhost:3000/beerdata.json');
-  const data = await res.json();
-  const regularBeers = data.regular
-  const seasonalBeers = data.seasonal
-
-  return {
-  props: {regularBeers, seasonalBeers}
-  }
-}
 
 
 
@@ -32,7 +22,6 @@ export default function Home({regularBeers, seasonalBeers}: any) {
       <title>끽비어입니다.</title>
       <meta name="title" content="끽비어컴퍼니"></meta>
       <meta name="description" content="한국 크래프트맥주 양조장 끽비어컴퍼니입니다. 을지로 탭하우스에서 만나보실 수 있습니다."></meta>
-      <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ll2fjdhq8m"></script>
     </Head>
          <Intro />
           <About />
@@ -46,3 +35,16 @@ export default function Home({regularBeers, seasonalBeers}: any) {
     </>
   );
 };
+
+// get props for beerdata
+export const getStaticProps = async () => {
+
+  const res = await fetch('http://localhost:3000/beerdata.json');
+  const data = await res.json();
+  const regularBeers = data.regular
+  const seasonalBeers = data.seasonal
+
+  return {
+  props: {regularBeers, seasonalBeers}
+  }
+}

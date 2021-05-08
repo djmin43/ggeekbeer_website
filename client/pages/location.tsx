@@ -5,14 +5,19 @@ import styles from '../styles/Location.module.css'
 
 const location = () => {
 
-    var map = null;
+    // var map = null;
 
     const initMap = () => {
-        map = new naver.maps.Map('map', {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
+        var map = new naver.maps.Map('map', {
+            center: new naver.maps.LatLng(37.5669239, 126.9934278),
             zoom: 10
         });
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.5669239, 126.9934278),
+            map: map
+        });
     }
+    
 
     useEffect(() => {
         initMap()

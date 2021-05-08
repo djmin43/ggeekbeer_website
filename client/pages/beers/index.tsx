@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Grid from '@material-ui/core/Grid'
 import styles from '../../styles/Beer.module.css'
-import axios from 'axios'
 
 interface Beer {
     id: number;
@@ -21,8 +20,8 @@ const index = ({regularBeers, seasonalBeers}: any) => {
         <div id="beers" className={styles.beer} >
         <Grid  container>
             {regularBeers.map((item: Beer) =>
-            <>
-            <Grid key={item.id} xs={12} sm={6} item>
+            <div key={item.id} >
+            <Grid  xs={12} sm={6} item>
                     <img className={styles.images} src={item.image} />
             </Grid>
             <Grid  className={styles.container} xs={12} sm={6} item>
@@ -31,7 +30,7 @@ const index = ({regularBeers, seasonalBeers}: any) => {
                 <span><i>{item.ingredients}</i></span>
                 <p>{item.descriptionLong}</p>
             </Grid>
-            </>
+            </div>
             )}
         </Grid>
         </div>
