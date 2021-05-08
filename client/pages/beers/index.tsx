@@ -31,12 +31,10 @@ const index = () => {
         }
     }
 
-    useEffect(() => {
-        getBeersData()
-    }, [])
+    getBeersData()
 
     return (
-        <div className={styles.beer} >
+        <div id="beers" className={styles.beer} >
         <Grid  container>
             {regular.map((item: Beer) =>
             <>

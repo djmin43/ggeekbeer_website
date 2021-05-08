@@ -9,7 +9,7 @@ const About = () => {
 
     
     return (
-        <div>
+        <div id="about">
             <div  className={styles.about} id="about">
                     <Grid  container>
                     <Grid xs={12} sm={4} item>

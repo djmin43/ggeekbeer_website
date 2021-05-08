@@ -2,11 +2,13 @@ import Head from 'next/head';
 import About from './about';
 import NewsList from './news_list';
 import BeerList from './beer_list';
+import Location from './location'
 import ContactUs from './contact_us';
 import Intro from './intro'
 import Beers from './beers/index'
 
 export default function Home() {
+
   return (
     <>
     <Head>
@@ -19,6 +21,7 @@ export default function Home() {
       <Beers />
       {/* <NewsList />
       <BeerList /> */}
+      <Location />
       <ContactUs />
     </>
   );

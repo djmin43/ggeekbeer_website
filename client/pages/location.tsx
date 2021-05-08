@@ -5,27 +5,15 @@ import styles from '../styles/Location.module.css'
 
 const location = () => {
 
-
-    function initMap() {
-        const map = new naver.maps.Map('map', {
-            center: new naver.maps.LatLng(37.3595704, 127.105399),
-            zoom: 10
-        });
-    }
-
-    useEffect(() => {
-        initMap()
-    }, [])
-
+ 
     return (
-        <div>
+        <div id="location">
             <Head>
-        
-
-                {/* ll2fjdhq8m */}
             </Head>
             끽비어 탭하우스는 을지로에 있습니다.
             <div id="map" className={styles.maps}></div>
+
+            끽비어 양조장은 고양시에 있습니다. 
 
         </div>
     )
