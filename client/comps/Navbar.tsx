@@ -11,7 +11,9 @@ const Navbar = () => {
             <Grid className={styles.container} container>
             
             <Grid xs={12} md={6}  item>
-                
+                <div className={styles.logo}>
+                    <img src='/ggeek_logo_resized.jpg' />
+                </div>
             </Grid>
 
             <Grid xs={12} md={6}  item>

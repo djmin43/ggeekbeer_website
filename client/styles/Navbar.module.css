@@ -1,6 +1,6 @@
 .container {
     background-color: #fff;
-    height: 12vh;
+    height: 10vh;
     margin: 0.5vw 0;
     width: 100vw;
     display: flex;
@@ -10,6 +10,34 @@
     top: 0;
     z-index: 3;
 }
+
+.logo {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    padding-bottom: 1vw;
+}
+
+.logo img {
+    width: 65%;
+    height: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img {
+        width: 80%;
+        height: 50%;
+    }
+  }
+
 
 .navbar {
     background-color: #fff;
