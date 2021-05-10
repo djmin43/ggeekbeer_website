@@ -2,12 +2,15 @@
     color: #000000;
     margin-bottom: 5vw;
     padding: 5vw;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
+.container {
+    padding: 5vw;
+}
 
 
 .images {
