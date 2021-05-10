@@ -12,21 +12,16 @@ const theme = createMuiTheme({
     overrides: {
         MuiInputLabel: { 
           root: { 
-            fontSize: "calc(9px + 1vw)", 
+            fontSize: "calc(3px + 1vw)", 
           },
         },
       }
   });
 
-//   Types
-
-
-
 interface ErrorMessage {
     message: string;
     code: string[];
 };
-
 
 
 const ContactUs = () => {

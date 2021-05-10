@@ -11,7 +11,7 @@ const location = () => {
         // Taphouse
         var taphouse = new naver.maps.Map('taphouse', {
             center: new naver.maps.LatLng(37.56707695385681, 126.99561649825412),
-            zoom: 25,
+            zoom: 15,
             zoomControl: true
         });
         var taphouseMarker = new naver.maps.Marker({
@@ -22,7 +22,7 @@ const location = () => {
         // Brewery
         var brewery = new naver.maps.Map('brewery', {
             center: new naver.maps.LatLng(37.71344096516783, 126.8666797982575),
-            zoom: 25,
+            zoom: 15,
             zoomControl: true
         });
         var breweryMarker = new naver.maps.Marker({
