@@ -25,7 +25,7 @@ export default function Home({regularBeers, seasonalBeers}: any) {
     </Head>
          <Intro />
           <About />
-          <Beers regularBeers={regularBeers} seasonalBeers={seasonalBeers}/>
+          <Beers />
           <Location />
          <ContactUs />
 
@@ -35,23 +35,3 @@ export default function Home({regularBeers, seasonalBeers}: any) {
     </>
   );
 };
-
-// get props for beerdata
-export const getStaticProps = async () => {
-  try {
-    const regularBeers: any = []
-    const seasonalBeers: any = []
-    const res = await fetch('/beerdata.json');
-    const data = await res.json();
-    await regularBeers.push(data.regular)
-    await seasonalBeers.push(data.seasonal)
-    return {
-      props: {regularBeers, seasonalBeers}
-      }
-  } catch(error) {
-    console.log(error)
-  }
-
-
-
-}
