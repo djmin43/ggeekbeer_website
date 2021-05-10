@@ -11,7 +11,7 @@ const location = () => {
         // Taphouse
         var taphouse = new naver.maps.Map('taphouse', {
             center: new naver.maps.LatLng(37.56707695385681, 126.99561649825412),
-            zoom: 30,
+            zoom: 25,
             zoomControl: true
         });
         var taphouseMarker = new naver.maps.Marker({
@@ -22,7 +22,7 @@ const location = () => {
         // Brewery
         var brewery = new naver.maps.Map('brewery', {
             center: new naver.maps.LatLng(37.71344096516783, 126.8666797982575),
-            zoom: 40,
+            zoom: 25,
             zoomControl: true
         });
         var breweryMarker = new naver.maps.Marker({
@@ -47,7 +47,7 @@ const location = () => {
         <div className={styles.location} id="location">
 
         <Grid container>
-            <Grid xs={12} md={6} item>
+            <Grid className={styles.mapContainer} xs={12} md={6} item>
                 <div id="taphouse" className={styles.maps}></div>
             </Grid>
             <Grid className={styles.description} xs={12} md={6} item>
@@ -64,7 +64,7 @@ const location = () => {
             </Grid>
         </Grid>
         <Grid container>
-        <Grid xs={12} md={6} item>
+        <Grid className={styles.mapContainer} xs={12} md={6} item>
                 <div id="brewery" className={styles.maps}></div>
             </Grid>
             <Grid className={styles.description}  xs={12} md={6} item>
