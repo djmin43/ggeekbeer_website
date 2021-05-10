@@ -1,13 +1,14 @@
 .container {
     background-color: #fff;
     height: 12vh;
+    margin: 0.5vw 0;
     width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     position: sticky;
     top: 0;
-    z-index: 3; 
+    z-index: 3;
 }
 
 .navbar {

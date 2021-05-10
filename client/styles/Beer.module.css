@@ -1,4 +1,5 @@
 .beer {
+    background-color: #F8FAFF;
     color: #000000;
     margin-bottom: 5vw;
     padding: 5vw;
@@ -24,6 +25,7 @@
 
 .beer h2{
     margin: 1vw 0;
+    text-align: center;
 }
 
 .beer h4 {
