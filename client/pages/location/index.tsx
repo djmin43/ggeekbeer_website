@@ -74,7 +74,7 @@ const location = () => {
                 <span>Tel: 031-963-5225
                 <br/>Fax: 031-963-5225</span>
                 <span></span>
-                <h3>PATUO HOURS</h3>
+                <h3>PATIO HOURS</h3>
                 <span>Friday 3pm - 9pm
                 <br/>Saturday 3pm - 9pm</span>
             </Grid>
