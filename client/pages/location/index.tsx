@@ -35,7 +35,6 @@ const location = () => {
 
     useEffect(() => {
         initMap()
-
     }, [])
 
     return (
