@@ -3,14 +3,9 @@
 }
 
 .page {
-    padding: 2vw 17vw;
+    padding: 2vw 8vw;
 }
 
-/* @media only screen and (max-width: 600px) {
-    .page {
-        height: 100vw;
-    }
-  } */
 
 .image {
     object-fit: contain;
@@ -18,5 +13,6 @@
 }
 
 .page p {
-    margin-bottom: 3vw;
+    margin-bottom: 1.5vw;
+    text-align: left;
 }
