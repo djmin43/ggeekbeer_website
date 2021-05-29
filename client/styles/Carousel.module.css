@@ -1,0 +1,22 @@
+.container{
+    text-align: center;
+}
+
+.page {
+    padding: 2vw 17vw;
+}
+
+/* @media only screen and (max-width: 600px) {
+    .page {
+        height: 100vw;
+    }
+  } */
+
+.image {
+    object-fit: contain;
+    width: 33vw;
+}
+
+.page p {
+    margin-bottom: 3vw;
+}
