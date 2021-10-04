@@ -5,7 +5,7 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: 'https://four-credit-079.notion.site/Ggeek-Beer-Co-afa6bc2cf2b54420a798cf8870280b52',
+        destination: 'https://ggeekbeer.oopy.io/',
         permanent: false,
       },
     ]
